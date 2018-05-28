@@ -1,0 +1,9 @@
+INDEX VERSION 1.130+/home/martinwudenka/CbSE/osgi/.metadata/.plugins/org.eclipse.jdt.core
+1839355036.index
+4104848678.index
+1404236684.index
+2957360049.index
+2301063779.index
+1478251902.index
+3301288500.index
+3694072896.index

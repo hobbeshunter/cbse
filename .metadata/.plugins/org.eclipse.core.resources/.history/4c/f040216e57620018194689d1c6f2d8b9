@@ -1,0 +1,7 @@
+package commontypes.services;
+
+public interface ICustomerMgnt {
+	
+	public void addCustomer(String name);
+
+}
