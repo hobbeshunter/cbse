@@ -1,0 +1,20 @@
+package productionmgnt.services;
+
+import commontypes.datatypes.Product;
+import commontypes.services.IProductionMgnt;
+
+public class ProductionMgnt implements IProductionMgnt {
+
+	@Override
+	public String comissionProduct(Product product) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String getStatus(String id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

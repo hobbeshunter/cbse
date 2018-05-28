@@ -1,0 +1,5 @@
+package commontypes.datatypes;
+
+public class Product {
+
+}

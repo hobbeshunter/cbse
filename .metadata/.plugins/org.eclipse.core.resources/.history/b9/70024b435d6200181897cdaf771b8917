@@ -1,0 +1,5 @@
+package productionmgnt.datatypes;
+
+public class ProcessedProduct {
+
+}

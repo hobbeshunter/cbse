@@ -1,0 +1,9 @@
+package commontypes.services;
+
+import commontypes.datatypes.Product;
+
+public interface IProductionMgnt {
+	
+	public void comissionProduct(Product product);
+
+}
