@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="org.osgi.framework.BundleContext"/>
-<fullyQualifiedTypeName name="org.osgi.framework.ServiceReference"/>
-<fullyQualifiedTypeName name="commontypes.services.ICustomerMgnt"/>
-<fullyQualifiedTypeName name="java.util.List"/>
-</qualifiedTypeNameHistroy>

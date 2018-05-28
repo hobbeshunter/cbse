@@ -1,9 +1,0 @@
-package commontypes.datatypes;
-
-public class Product {
-	
-	private String customerId;
-	
-	
-
-}

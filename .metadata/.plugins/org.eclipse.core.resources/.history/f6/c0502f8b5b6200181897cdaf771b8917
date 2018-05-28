@@ -1,7 +1,0 @@
-package commontypes.services;
-
-public interface IProductionMgnt {
-	
-	public 
-
-}

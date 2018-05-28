@@ -1,5 +1,0 @@
-package commontypes.services;
-
-public interface ICustomerMgnt {
-
-}
