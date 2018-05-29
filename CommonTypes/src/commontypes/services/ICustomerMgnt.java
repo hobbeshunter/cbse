@@ -1,6 +1,6 @@
 package commontypes.services;
 
-import customermgnt.datatypes.Customer;
+//import customermgnt.datatypes.Customer;
 
 public interface ICustomerMgnt {
 	

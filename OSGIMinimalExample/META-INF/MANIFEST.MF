@@ -7,6 +7,5 @@ Bundle-Activator: osgiminimalexample.Activator
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Bundle-ActivationPolicy: lazy
 Require-Bundle: ComponentA;bundle-version="1.0.0",
- CommonTypes;bundle-version="1.0.0",
- StoreMgnt;bundle-version="1.0.0"
+ CommonTypes;bundle-version="1.0.0"
 Import-Package: org.osgi.framework

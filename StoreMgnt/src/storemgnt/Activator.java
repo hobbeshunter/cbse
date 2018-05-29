@@ -3,6 +3,9 @@ package storemgnt;
 import org.osgi.framework.BundleActivator;
 import org.osgi.framework.BundleContext;
 
+import commontypes.datatypes.Product;
+import storemgnt.services.StoreMgnt;
+
 public class Activator implements BundleActivator {
 
 	private static BundleContext context;
@@ -17,6 +20,8 @@ public class Activator implements BundleActivator {
 	 */
 	public void start(BundleContext bundleContext) throws Exception {
 		Activator.context = bundleContext;
+		System.out.println("Store online"); 
+	
 	}
 
 	/*
@@ -25,6 +30,7 @@ public class Activator implements BundleActivator {
 	 */
 	public void stop(BundleContext bundleContext) throws Exception {
 		Activator.context = null;
+		System.out.println("Store offline.");
 	}
 
 }

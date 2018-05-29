@@ -1,5 +1,6 @@
 package storemgnt.services;
 
+
 import commontypes.datatypes.Product;
 import commontypes.services.ICustomerMgnt;
 import commontypes.services.IProductionMgnt;
@@ -13,19 +14,19 @@ import org.osgi.framework.BundleContext;
 
 public class StoreMgnt implements IStoreMgnt{
 	
-	private BundleContext context;
+	//private BundleContext context;
 	private ICustomerMgnt customerService;
 	//private IInvoiceMgnt invoceSercice;
 	private IProductionMgnt productionService;
 	private Store store;
 
-	public StoreMgnt(BundleContext context) {
-		this.context = context;
+	public StoreMgnt(	) {
+		/**this.context = context;
 		this.store = new Store(new Session(-1, StoreSessionState.GUEST));
-		ServiceReference<ICustomerMgnt> cm = context.getServiceReference(ICustomerMgnt.class);
-		this.customerService = context.getService(cm);
-		ServiceReference<IProductionMgnt> ps = context.getServiceReference(IProductionMgnt.class);
-		this.productionService = context.getService(ps);
+		ServiceReference<ICustomerMgnt> cm = this.context.getServiceReference(ICustomerMgnt.class);
+		this.customerService = this.context.getService(cm);
+		ServiceReference<IProductionMgnt> ps = this.context.getServiceReference(IProductionMgnt.class);
+		this.productionService = context.getService(ps);*/
 	}
 
 	@Override
@@ -65,6 +66,7 @@ public class StoreMgnt implements IStoreMgnt{
 		// TODO Auto-generated method stub
 		// GOTO post office.
 		// CALL customer.
+		System.out.println("delivered.");
 	}
 	
 }
