@@ -1,7 +1,10 @@
 package osgiminimalexample;
 
+import commontypes.datatypes.Product;
 import commontypes.services.IServiceA;
 import commontypes.services.IServiceB;
+import commontypes.services.IStoreMgnt;
+
 import org.osgi.framework.BundleActivator;
 import org.osgi.framework.BundleContext;
 import org.osgi.framework.ServiceReference;
@@ -35,6 +38,16 @@ public class Activator implements BundleActivator {
 				service.methodA();
 			}
 		}
+		ServiceReference<IStoreMgnt> storeReference = context.getServiceReference(IStoreMgnt.class);
+		IStoreMgnt storeService = context.getService(storeReference); 
+		long customerId = storeService.register("M3T_Team");
+		System.out.println("new Customer registered. Id: " + customerId);
+		boolean approved = storeService.approveCustomer(customerId, new Long(12341324));
+		System.out.println("new Customer approved: " + approved);
+		boolean loggedIn = storeService.login(customerId);
+		System.out.println("Customer logged in: " + loggedIn);
+		storeService.upload("My_First_Project.xml");
+		storeService.deliver(new Product());
 	}
 
 	/*
