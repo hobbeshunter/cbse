@@ -14,19 +14,15 @@ import org.osgi.framework.BundleContext;
 
 public class StoreMgnt implements IStoreMgnt{
 	
-	//private BundleContext context;
+	private BundleContext context;
 	private ICustomerMgnt customerService;
 	//private IInvoiceMgnt invoceSercice;
 	private IProductionMgnt productionService;
 	private Store store;
 
-	public StoreMgnt(	) {
-		/**this.context = context;
+	public StoreMgnt(BundleContext context) {
+		this.context = context;
 		this.store = new Store(new Session(-1, StoreSessionState.GUEST));
-		ServiceReference<ICustomerMgnt> cm = this.context.getServiceReference(ICustomerMgnt.class);
-		this.customerService = this.context.getService(cm);
-		ServiceReference<IProductionMgnt> ps = this.context.getServiceReference(IProductionMgnt.class);
-		this.productionService = context.getService(ps);*/
 	}
 
 	@Override

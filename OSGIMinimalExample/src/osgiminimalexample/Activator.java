@@ -1,6 +1,5 @@
 package osgiminimalexample;
 
-import commontypes.datatypes.Product;
 import commontypes.services.IServiceA;
 import commontypes.services.IServiceB;
 
