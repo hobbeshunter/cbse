@@ -19,6 +19,9 @@ public class CustomerMgnt implements ICustomerMgnt {
 	public long addCustomer(String name) {
 		Customer c = new Customer(id_counter, name);
 		customers.add(c);
+		
+		System.out.println("Added Customer " + name + " with id " + c.getId());
+		
 		id_counter++;
 		return c.getId();
 	}

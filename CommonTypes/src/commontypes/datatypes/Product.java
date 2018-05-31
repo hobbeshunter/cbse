@@ -2,16 +2,16 @@ package commontypes.datatypes;
 
 public class Product {
 	
-	private String customerId;
+	private long customerId;
 	private String mesh;
 	private String color;
 	private String finish;
 
-	public String getCustomerId() {
+	public long getCustomerId() {
 		return customerId;
 	}
 
-	public void setCustomerId(String customerId) {
+	public void setCustomerId(long customerId) {
 		this.customerId = customerId;
 	}
 
@@ -39,6 +39,8 @@ public class Product {
 		this.finish = finish;
 	}
 	
-	
+	public String toString() {
+		return "Product for customer " + customerId;
+	}
 
 }

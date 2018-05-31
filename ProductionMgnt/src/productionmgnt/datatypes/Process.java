@@ -2,23 +2,23 @@ package productionmgnt.datatypes;
 
 import commontypes.datatypes.Product;
 
-public class ProcessedProduct {
+public class Process {
 	
 	private String id;
-	private String status;
+	private ProcessStatus status;
 	private Product product;
 	
-	public ProcessedProduct(String id, Product product) {
+	public Process(String id, Product product) {
 		this.setId(id);
 		this.product = product;
-		this.status = "waiting";
+		this.status = ProcessStatus.waiting;
 	}
 
-	public String getStatus() {
+	public ProcessStatus getStatus() {
 		return status;
 	}
 
-	public void setStatus(String status) {
+	public void setStatus(ProcessStatus status) {
 		this.status = status;
 	}
 
