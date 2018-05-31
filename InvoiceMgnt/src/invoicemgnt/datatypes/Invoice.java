@@ -1,4 +1,4 @@
-package invoicemgnt.datatype;
+package invoicemgnt.datatypes;
 
 import java.util.List;
 
@@ -13,21 +13,20 @@ public class Invoice {
 	private List<Product> products;
 	private double value;
 	private int quantity;
-	
-	public Invoice(Customer customer, String id, List<Product> products, double value, int quantity){
+
+	public Invoice(Customer customer, String id, List<Product> products, double value, int quantity) {
 		super();
 		this.id = id;
 		this.customer = customer;
 		this.products = new LinkedList<Product>();
 		this.value = value;
-		this.quantity = quantity;	
+		this.quantity = quantity;
 	}
-	
-	public Invoice(String id){
+
+	public Invoice(String id) {
 		super();
 		this.id = id;
 	}
-	
 
 	public Customer getCustomer() {
 		return customer;
@@ -36,15 +35,15 @@ public class Invoice {
 	public void setCustomer(Customer customer) {
 		this.customer = customer;
 	}
-	
+
 	public void setId(String id) {
 		this.id = id;
 	}
-	
+
 	public String getId() {
 		return id;
 	}
-	
+
 	public double getValue() {
 		return value;
 	}
@@ -68,11 +67,11 @@ public class Invoice {
 	public void setProducts(List<Product> products) {
 		this.products = products;
 	}
-	
+
 	@Override
 	public String toString() {
-		return "Invoice:" + id + "For:" + customer + "Containing:" + products + "Price:" + value + "Quantity:" + quantity;
+		return "Invoice:" + id + "For:" + customer + "Containing:" + products + "Price:" + value + "Quantity:"
+				+ quantity;
 	}
-
 
 }

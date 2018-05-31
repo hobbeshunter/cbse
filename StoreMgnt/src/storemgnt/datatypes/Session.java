@@ -15,7 +15,7 @@ public class Session {
 	public StoreSessionState getState() {
 		return state;
 	}
-	
+
 	public void setState(StoreSessionState state) {
 		this.state = state;
 	}

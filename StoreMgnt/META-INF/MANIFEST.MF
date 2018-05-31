@@ -10,3 +10,4 @@ Bundle-ActivationPolicy: lazy
 Require-Bundle: CommonTypes;bundle-version="1.0.0",
  ProductionMgnt;bundle-version="1.0.0",
  CustomerMgnt;bundle-version="1.0.0"
+Automatic-Module-Name: StoreMgnt

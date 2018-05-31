@@ -5,4 +5,4 @@
  * @author Mimi
  *
  */
-package invoicemgnt.datatype;
+package invoicemgnt.datatypes;
