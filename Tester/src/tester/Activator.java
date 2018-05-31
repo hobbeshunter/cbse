@@ -11,7 +11,7 @@ import commontypes.datatypes.Product;
 import commontypes.services.ICustomerMgnt;
 import commontypes.services.IInvoiceMgnt;
 import commontypes.services.IProductionMgnt;
-import commontypes.services.IStoreMgnt;
+//import commontypes.services.IStoreMgnt;
 
 public class Activator implements BundleActivator {
 
